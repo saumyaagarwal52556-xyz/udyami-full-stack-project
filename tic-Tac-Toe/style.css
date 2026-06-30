@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    height: 60px;
+    font-size: 20px;
+    padding:  0 12px ;
+    display: flex;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+
+
+}
+nav ul{
+    list-style-type: none;
+
+}
+
+.gamecontainer{
+    margin-top: 20px;
+    height: 60vw;
+    width: 60vw;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family: "Roboto", sans-serif;
+    
+}
+.box{
+    border: 1px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    
+}
+/* to get kmow where our cursor is moving it will show some color on hovering */
+.box:hover{
+    background-color: rgb(201, 244, 229);
+}
+.info{
+    font-size: 20px;
+}
+
+.gameinfo{
+    padding: 0 34px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.gameinfo h1{
+    font-size: 1.5rem;
+}
+
+/* to remove border from the outside */
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset{
+    margin: 0 20px;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(242, 234, 249);
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    font-size: 10px;
+}
+
+.win-streak{
+    width: 0px;
+    height: 0px;
+}
+@media screen and (max-width:950px) {
+  .gamecontainer{
+    flex-wrap: wrap;
+
+  }
+  .gameinfo{
+    margin-top: 30px;
+  }
+  
+}
