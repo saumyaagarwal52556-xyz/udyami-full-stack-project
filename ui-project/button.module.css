@@ -1,0 +1,13 @@
+
+.btn{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
